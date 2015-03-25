@@ -15,9 +15,11 @@ class BoardsController < ActionController::Base
   end
 
   def index
+    @boards = Board.all
   end
 
   def show
+    @board = Board.find(params[:id])
   end
 
   def board_params

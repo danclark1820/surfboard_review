@@ -1,0 +1,10 @@
+<section>
+  <div>
+    <%= link_to "add a board", new_board_path %>
+    <ul>
+    <% @boards.each do |b| %>
+      <li><%= link_to b.name, board_path(b.id) %></li>
+    <% end %>
+    </ul>
+  </div>
+</section>

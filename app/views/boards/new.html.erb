@@ -1,0 +1,8 @@
+<section>
+  <h4>Add a Board</h4>
+  <%= simple_form_for @board do |f| %>
+    <%= f.input :company %>
+    <%= f.input :name %>
+    <%= f.submit "Add Board" %>
+  <% end %>
+</section>
